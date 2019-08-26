@@ -1,7 +1,7 @@
 # Faster-RCNN-with-torchvision
-通过pytorch torchvision官方提供的模块构建Faster-RCNN，可供代码学习和实际使用
-代码博客解析地址：[csdn](https://blog.csdn.net/watermelon1123/article/details/99570700)
-模型地址：[baidu cloud](https://pan.baidu.com/s/17Kpg01ukezrhHJ8vnG8K7A)
+通过pytorch torchvision官方提供的模块构建Faster-RCNN，可供代码学习和实际使用  
+代码博客解析地址：[csdn](https://blog.csdn.net/watermelon1123/article/details/99570700)  
+模型地址：[baidu cloud](https://pan.baidu.com/s/17Kpg01ukezrhHJ8vnG8K7A)  
 
 ## 安装
 ##### 代码及环境搭建
@@ -24,7 +24,7 @@
       val2017/
 ```
 
-## 训练
+## 训练及测试
 ##### 命令
 ```
 python -m torch.distributed.launch --nproc_per_node=6 --use_env train.py --world-size 6 --b 4
@@ -45,18 +45,18 @@ $ python detect.py --model_path result/model_13.pth --image_path imgs/1.jpg
 ## 结果
 
 ##### 准确率
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.352
- Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.573
- Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.375
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.207
- Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.387
- Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.448
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.296
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.474
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.498
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.312
- Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.538
- Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.631
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.352  
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.573  
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.375  
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.207  
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.387  
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.448  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.296  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.474  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.498  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.312  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.538  
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.631  
 
 ##### 结果示例
 <p align="center"><img src="assets/9.jpg" width="640"\></p>
