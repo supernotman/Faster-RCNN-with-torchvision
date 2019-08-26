@@ -31,10 +31,10 @@ python -m torch.distributed.launch --nproc_per_node=6 --use_env train.py --world
 ```
 
 ##### 参数说明
-[--nproc_per_node]   训练占用gpu数目
-[--b]                每个gpu上batch_size大小
-[--epochs]           训练epoch数目
-[output-dir]         模型输出路径
+[--nproc_per_node]   训练占用gpu数目  
+[--b]                每个gpu上batch_size大小  
+[--epochs]           训练epoch数目  
+[output-dir]         模型输出路径  
 
 
 ## 单张图片检测
@@ -59,5 +59,5 @@ $ python detect.py --model_path result/model_13.pth --image_path imgs/1.jpg
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.631  
 
 ##### 结果示例
-<p align="center"><img src="assets/9.jpg" width="640"\></p>
-<p align="center"><img src="assets/4.jpg" width="640"\></p>
+<p align="center"><img src="assets/9.jpg" width="320"\></p>
+<p align="center"><img src="assets/4.jpg" width="320"\></p>
